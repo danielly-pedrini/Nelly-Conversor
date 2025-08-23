@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Dnelly Conversao</title>
+</head>
+<body>
+  <div class="container">
+        <h1>Nelly Conversor de Moedas</h1>
+        
+        <div class="converter-section">
+            <div class="input-group">
+                <label for="fromCurrency">Converter de:</label>
+                <div class="select-wrapper">
+                    <img id="fromFlag" class="flag-icon" src="https://flagcdn.com/w40/br.png" alt="Brasil">
+                    <select id="fromCurrency">
+                        <option value="BRL">Real Brasileiro (BRL)</option>
+                        <option value="USD">Dólar Americano (USD)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="GBP">Libra Esterlina (GBP)</option>
+                        <option value="JPY">Iene Japonês (JPY)</option>
+                        <option value="KRW">Won Sul-Coreano (KRW)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label for="toCurrency">Converter para:</label>
+                <div class="select-wrapper">
+                    <img id="toFlag" class="flag-icon" src="https://flagcdn.com/w40/us.png" alt="Estados Unidos">
+                    <select id="toCurrency">
+                        <option value="USD">Dólar Americano (USD)</option>
+                        <option value="BRL">Real Brasileiro (BRL)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="GBP">Libra Esterlina (GBP)</option>
+                        <option value="JPY">Iene Japonês (JPY)</option>
+                        <option value="KRW">Won Sul-Coreano (KRW)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="amount-section">
+            <input type="number" id="amount" class="amount-input" placeholder="Digite o valor a ser convertido" min="0" step="0.01">
+        </div>
+        
+        <button class="convert-button" onclick="convertCurrency()">Converter</button>
+        
+        <div class="result-section">
+            <div class="currency-display">
+                <div class="currency-item">
+                    <img id="fromCurrencyFlag" class="flag-icon" src="https://flagcdn.com/w40/br.png" alt="Brasil">
+                    <span id="fromCurrencySymbol" class="currency-symbol">R$</span>
+                </div>
+                <span class="arrow">→</span>
+                <div class="currency-item">
+                    <img id="toCurrencyFlag" class="flag-icon" src="https://flagcdn.com/w40/us.png" alt="Estados Unidos">
+                    <span id="toCurrencySymbol" class="currency-symbol">$</span>
+                </div>
+            </div>
+            
+            <div id="result" class="result-value">0,00</div>
+            <div class="result-currency">
+                <img id="resultFlag" class="flag-icon" src="https://flagcdn.com/w40/us.png" alt="Estados Unidos">
+                <span id="resultCurrencyName">Dólar Americano (USD)</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
