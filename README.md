@@ -2,6 +2,8 @@
 
 Um conversor de moedas elegante e responsivo desenvolvido com HTML, CSS e JavaScript puro. O projeto oferece conversões em tempo real entre as principais moedas mundiais com uma interface moderna e intuitiva.
 
+<img src="./src/img projeto.jpeg" alt="imgagem do projeto">
+
 ## ✨ Características
 
 - 🌍 **6 Moedas Suportadas**: BRL, USD, EUR, GBP, JPY, KRW
